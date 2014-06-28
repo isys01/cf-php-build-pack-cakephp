@@ -5,18 +5,19 @@ CloudFoundry PHP Build packのDocumentRootがhtdocs(/home/vcap/app/htdocs/)
 htdocs/app/webroot
 にするように
 defaults/config/httpd/2.4.x/httpd.conf内を
---
+
 #DocumentRoot "${HOME}/htdocs"
 DocumentRoot "${HOME}/htdocs/app/webroot"
---
+
 と書き換えただけです
 
 ただ、これだけだとどうもうまくいかないので
-cakephpのrootにあるindex.phpを
---
- -         define('CAKE_CORE_INCLUDE_PATH', ROOT . DS . 'lib');
- +         define('CAKE_CORE_INCLUDE_PATH', ROOT . DS . '../lib');
---
+cakephpのrootにあるindex.phpの38行目を
+
+         define('CAKE_CORE_INCLUDE_PATH', ROOT . DS . 'lib');
+を
+         define('CAKE_CORE_INCLUDE_PATH', ROOT . DS . '../lib');
+
 と書き換えてあげてください
 
 
