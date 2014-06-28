@@ -1,9 +1,10 @@
-CloudFoundry PHP Build pack を cakephpに対応した版です
+CloudFoundry PHP Build pack を使ってIBM BlueMixで cakephp2 を動かすように対応したものです
 
-CloudFoundry PHP Build packのDocumentRootがhtdocs(/home/vcap/app/htdocs/)
+
+CloudFoundry PHP Build packのDocumentRootが
+IBM BlueMixだとhtdocs(/home/vcap/app/htdocs/)
 なので
-htdocs/app/webroot
-にするように
+htdocs/app/webrootにするように
 defaults/config/httpd/2.4.x/httpd.conf内の
 
          DocumentRoot "${HOME}/htdocs"
