@@ -27,3 +27,11 @@ cakephpのrootにあるindex.phpの38行目の
 
 本当はcf-exを作るべきなんでしょうね
 
+
+
+### License
+
+The CloudFoundry PHP Build Pack is released under version 2.0 of the [Apache License].
+
+
+[Apache License]:http://www.apache.org/licenses/LICENSE-2.0
