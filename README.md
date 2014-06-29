@@ -31,7 +31,7 @@ cakephpのrootにあるindex.phpの38行目の
 
 ### License
 
-The CloudFoundry PHP Build Pack is released under version 2.0 of the [Apache License].
+"this software includes the work that is distributed in the [Apache License 2.0].
 
 
-[Apache License]:http://www.apache.org/licenses/LICENSE-2.0
+[Apache License 2.0]:http://www.apache.org/licenses/LICENSE-2.0
